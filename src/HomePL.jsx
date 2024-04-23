@@ -15,7 +15,7 @@ export default function HomePL() {
       <div>
         Siema!
       </div>
-      <div>To jest strona domowa.</div>
+      <div>To jest strona domowa,coś tu jest.</div>
         <input className='Button'
           type="button"
           value={"EN"}
