@@ -1,42 +1,134 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0,0,0,0.1)0%,rgba(33, 4, 30, 0.9), rgba(199, 49, 157, 0.5));
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  margin: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+h1 {
+  font-size: 3.2em;
+  font-family: Jost;
+  font-weight: 400;
+  line-height: 1.1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+h2 {
+  font-family: Inter;
+  font-size: 60px;
+  font-weight: 400;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.topBar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 50px;
+} 
+
+.page{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+}
+
+.panel{
+ border: 6px transparent;
+ border-radius: 6px;
+ margin: 4px;
+ font-weight: 500;
+ font-size: 1em;;
+ ol.tools {list-style-type: inherit;}
+ ol.skills {list-style-type: inherit;}
+ ol.languages {list-style-type: inherit;}
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
+}
+
+.panelTitle{
+  border: 6px transparent;
+  border-radius: 6px 6px 0 0;
+  font-weight: 700;
+  margin: -1px -1px 0;
+  padding: 4px 2px 2px;
+  background-color: transparent;
+  font-size: 2em;
+}
+
+.footer{
+  width: 100%;
+  min-height: 3vh;
+  background-color: red;
+  align-items: end;
+}
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight:bold;
+  color: #1a1a1a;
+
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
   }
-  to {
-    transform: rotate(360deg);
+
+  button {
+    background-color: #f9f9f9;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

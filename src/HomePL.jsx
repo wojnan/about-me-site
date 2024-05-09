@@ -11,7 +11,10 @@ export default function HomePL() {
   }
 
   return (
-    <>
+    <div className='Page'>
+      <header>
+        <h1>HeAd</h1>
+      </header>
       <div>
         Siema!
       </div>
@@ -21,6 +24,6 @@ export default function HomePL() {
           value={"EN"}
           onClick={onButtonClick}
         />
-    </>
+    </div>
   )
 }
