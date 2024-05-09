@@ -122,6 +122,19 @@ h2 {
   gap: 10px;
 }
 
+.reveal {
+  opacity: 0; 
+  transform: translateY(100px);
+  transition: opacity 3s ease, transform 3s ease;
+  filter: blur(5px);
+}
+
+.reveal.visible {
+  opacity: 1; 
+  transform: translateY(0);
+  filter: blur(0);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -130,5 +143,8 @@ h2 {
 
   button {
     background-color: #f9f9f9;
+  }
+  .hidden {
+    transition: none;
   }
 }
