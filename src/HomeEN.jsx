@@ -47,33 +47,59 @@ export default function HomeEN() {
         />
       </div>
 
-      <div className='page'>
-        <header>
-          <h1>Hi! Welcome to my site :)</h1>
-          <h2>
-            <div ref={revealRef} className='reveal'>
-              <div>About me</div>
-              <div className='introduction'>
-                <p>
-                  My name is Anna, but I go by <b>wojnan</b> on the internet
-                  and everywhere else. <br />
-                  I'm a Polish Computer Science student and a baby programmer.{' '}
-                  <br />
-                  I love videogames, science, art, and sports (but only when I
-                  feel like it), and I'm chronically online. <br />
-                  I dream about making something significant for others,
-                  something that can change their lives.
-                </p>
-              </div>
+      <header>
+        <h1>Hi! Welcome to my site :)</h1>
+        <h2>
+          <div ref={revealRef} className='reveal'>
+            <div>About me</div>
+            <div className='introduction'>
+              <p>
+                My name is Anna, but I go by <span className='wojnan'>wojnan</span> on the internet and everywhere else. <br />
+                I'm a Polish Computer Science student and a baby programmer :)<br />
+                I love videogames, science, art, and sports (but only when Ifeel like it), and I'm chronically online. <br />
+                I dream about making something significant for others,something that can change their lives.
+              </p>
             </div>
-          </h2>
-        </header>
+          </div>
+        </h2>
+      </header>
 
+      <div className='page'>
         <div className='panel'>
+          <div className='panelTitle'>
+            <span>Programming languages</span>
+          </div>
+          <ol>
+          <li>C</li>
+          <li>C++</li>
+          <li>C#</li>
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          </ol>
+        </div>
+
+        <div className='vl'></div>
+        
+        <div className='panel'>
+          <div className='panelTitle'>
+            <span>Development skills</span>
+          </div>
+          <ol>
+            <li>Web: HTML, CSS, React.js, Vite</li>
+            <li>Mobile: React native, Expo</li>
+            <li>Game: Unity, Unreal Engine </li>
+            <li>Software: .Net </li>
+          </ol> 
+        </div>
+        
+        <div className='vl'></div>
+
+        <div className='panel'> 
           <div className='panelTitle'>
             <span>Tools</span>
           </div>
-          <ol className="tools">
+          <ol>
             <li>IDEs / Editors: Visual Studio, VS Code, InteliJ</li>
             <li>Versioning: Git, Github</li>
             <li>Databases: SQL, MySQL</li>
@@ -81,71 +107,46 @@ export default function HomeEN() {
           </ol> 
         </div>
 
-        <div className='panel'>
-          <div className='panelTitle'>
-            <span>Development skills</span>
-          </div>
-          <ol className="skills">
-            <li>Web: HTML, CSS, React.js, Vite</li>
-            <li>Mobile: React native, Expo</li>
-            <li>Game: Unity, Unreal Engine </li>
-            <li>Software: .Net </li>
-          </ol> 
-        </div>
-
-        <div className='panel'>
-          <div className='panelTitle'>
-            <span>Programming languages</span>
-          </div>
-          <div>C, C++, C#, Java, JavaScript, Python? </div>
-        </div>
+        <div className='vl'></div>
 
         <div className='panel'>
           <div className='panelTitle'>
             <span>Languages</span>
           </div>
-          <ol className="languages">
+          <ol>
             <li>Polish (native)</li>
             <li>English (C1)</li>
-            <li>a little of Italian and German</li>
+            <div>And a bit of:</div>
+            <li> Italian</li>
+            <li> German</li>
           </ol> 
         </div>
+      </div>
 
-
-        <footer className='footer'>
-          <div>
-            <div className='contact'>
-              <div>©2024 wojnan</div>
-              <div className='links'>
-                <a
-                  href='mailto:wojnan2020@gmail.com?subject=Email%20Subject&body%20text'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  <img
-                    src='/images/email-logo.png'
-                    alt='Mail logo'
-                    width='30px'
-                    height='30px'
+      <footer className='footer'>
+        <div>
+          <div className='contact'>
+            <div>©2024 wojnan</div>
+            <div className='links'>
+              <a href='mailto:wojnan2020@gmail.com?subject=Email%20Subject&body%20text'>
+                <img src='/images/email-logo.png'
+                alt='Mail logo'
+                width='30px'
+                height='30px'
+                />
+              </a>
+              <a href='https://github.com/wojnan'>
+                <img src='/images/github-logo.png'
+                  alt='Github logo'
+                  width='25px'
+                  height='25px'
                   />
-                </a>
-                <a
-                  href='https://github.com/wojnan'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  <img
-                    src='/images/github-logo.png'
-                    alt='Github logo'
-                    width='20px'
-                    height='20px'
-                  />
-                </a>
-              </div>
+              </a>
             </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
+      
     </>
   );
 }
