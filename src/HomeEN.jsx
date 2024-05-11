@@ -139,7 +139,7 @@ export default function HomeEN() {
                 <img src='/images/github-logo.png'
                   alt='Github logo'
                   width='25px'
-                  height='25px'
+                  height='2px'
                   />
               </a>
             </div>
